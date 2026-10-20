@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deserto em 3D</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+  html, body { margin: 0; height: 100%; font-family: Arial, Helvetica, sans-serif; }
+  body { display: flex; flex-direction: column; height: 100vh; background: #f3e2c7; }
+  header { padding: 12px 16px; background: #c2703a; color: #fff; }
+  h1 { margin: 0; font-size: 1.4rem; }
+  p.sub { margin: 4px 0 0; font-size: 0.95rem; }
+  model-viewer { flex: 1; width: 100%; background: linear-gradient(#4aa3e8, #bfe3f7); }
+  footer { padding: 8px 16px; font-size: 0.8rem; color: #333; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Bioma: Deserto - maquete 3D</h1>
+    <p class="sub">Trabalho de Geografia. Gire com o dedo ou com o mouse.</p>
+  </header>
+
+  <model-viewer
+    src="cena.glb"
+    alt="Maquete 3D de um deserto"
+    camera-controls
+    camera-orbit="13.8deg 77.5deg 16.69m"
+    camera-target="-2.03m -0.84m -8.97m"
+    field-of-view="22.9deg"
+    min-camera-orbit="-16.2deg 65.5deg 12.52m"
+    max-camera-orbit="43.8deg 89.5deg 23.37m"
+    min-field-of-view="18.3deg"
+    max-field-of-view="27.5deg"
+    disable-pan
+    interaction-prompt="none"
+    shadow-intensity="1"
+    exposure="1.1">
+  </model-viewer>
+
+  <footer>
+    Feito no Blender com modelos 3D gratuitos de Runemark Studio e Quaternius (licen&ccedil;a CC0).
+  </footer>
+</body>
+</html>
